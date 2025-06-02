@@ -26,7 +26,7 @@ tourBoxes.forEach((box) => {
     inclusionList.innerHTML = "";
     inclusions.forEach((item) => {
       const p = document.createElement("p");
-      p.textContent = item;
+      p.textContent = "✅" +item;
       inclusionList.appendChild(p);
     });
 
