@@ -177,12 +177,8 @@
     </div>
   </section>
   
-
-
-
-
 <div class="gallery" id="gallery">
-    <h2 style="font-size: 2rem; padding: 20px;"><center>Travel Tips!</center></h2>
+    <h2 style="font-size: 2rem; padding: 10px;"><center>Travel Tips!</center></h2>
 
     <div class="box-container4">
         <div class="box4">
@@ -239,19 +235,55 @@
     </div>
 </div>
 
+<section class="reviews-section">
+  <h2>Customer Reviews</h2>
+  <div class="reviews-container">
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="https://i.pravatar.cc/50?img=1" alt="travelgirljen" />
+        <span class="review-username">@travelgirljen</span>
+      </div>
+      <p class="review-text">“Had the BEST time in Cebu with my college friends. YOLO made it hassle-free and super fun!”</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="https://i.pravatar.cc/50?img=2" alt="joeytravels" />
+        <span class="review-username">@joeytravels</span>
+      </div>
+      <p class="review-text">“Affordable AND aesthetic? Booked again for next summer!”</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="https://i.pravatar.cc/50?img=3" alt="markthesolo" />
+        <span class="review-username">@markthesolo</span>
+      </div>
+      <p class="review-text">“Met amazing people, experienced amazing culture. Can’t wait for my next YOLO trip!”</p>
+    </div>
+
+  </div>
+</section>
+
 <button id="scrollToTopBtn" title="Go to top">↑</button>
 
 <div id="bookingModal" class="modal">
-    <div class="modal-content">
-      <span id="closeBooking" class="close">&times;</span>
+  <div class="modal-content side-by-side">
+    <span id="closeBooking" class="close">&times;</span>
+    
+    <div class="modal-image">
+      <img src="/images/book-img.jpg" alt="Book Tour" />
+    </div>
+
+    <div class="modal-form">
       <h2>Reserve Your Adventure</h2>
       <form id="bookingForm">
-  
         <div class="form-group">
-            <label for="tourPackage">Selected Tour Option</label>
-            <input type="text" id="tourPackage" name="tourPackage" readonly placeholder=""/>
-        </div> 
-        
+          <label for="tourPackage">Selected Tour Option</label>
+          <input type="text" id="tourPackage" name="tourPackage" readonly placeholder="" />
+        </div>
+
         <div class="form-group dual-input">
           <div>
             <label for="firstName">Your First Name</label>
@@ -262,7 +294,7 @@
             <input type="text" id="lastName" name="lastName" placeholder="Last" required />
           </div>
         </div>
-  
+
         <div class="form-group dual-input">
           <div>
             <label for="email">Email Address</label>
@@ -273,17 +305,17 @@
             <input type="tel" id="phone" name="phone" placeholder="09XX-XXX-XXXX" required />
           </div>
         </div>
-  
+
         <div class="form-group">
           <label for="tourDate">Choose Your Tour Date</label>
           <input type="date" id="tourDate" name="tourDate" required />
         </div>
-  
+
         <div class="form-group">
           <label for="groupSize">Total Number of Guests</label>
           <input type="number" id="groupSize" name="groupSize" min="1" max="50" required />
         </div>
-  
+
         <div class="form-group">
           <label>Preferred Contact Method</label>
           <div class="radio-group">
@@ -291,11 +323,13 @@
             <label><input type="radio" name="contactMethod" value="Email" required /> Email</label>
           </div>
         </div>
-  
+
         <button type="submit" class="submit-btn">Confirm Your Booking</button>
       </form>
     </div>
+  </div>
 </div>
+
 
 <div id="tourModal" class="modal">
     <div class="modal-content2">
