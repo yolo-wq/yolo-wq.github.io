@@ -784,7 +784,7 @@ footer {
   }
   
   .package-card {
-    background: white;
+    background: #ffd900;
     border-radius: 15px;
     padding: 25px 20px;
     box-shadow: 0 8px 20px rgba(36, 117, 183, 0.12);
@@ -800,7 +800,10 @@ footer {
   .package-card h3 {
     margin-top: 0;
     color: #2475b7;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
   }
   
   .price {
@@ -1025,5 +1028,11 @@ footer {
     }
     100% {
       transform: translateX(-50%);
+    }
+    50% {
+      transform: translateX(-25%);
+    }
+    0% {
+      transform: translateX(0%);
     }
   }
